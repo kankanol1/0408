@@ -3,7 +3,7 @@
 - name: Markdown
   link: /markdown/
 - name: Jekyll
-  link: /jekyll/
+  link: jekyll/
 #- name: Javascript
 #  link: /javascript/
 #- name: CSS
@@ -14,5 +14,5 @@
   link: /react/
 - name: "博客"
   link: /kankan/
-- naem: Staff
+- name: Staff
   link: /staff/

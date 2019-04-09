@@ -44,21 +44,46 @@ nav{
   padding: 50px 40px 0;
 }
 
+/*ul{
+  margin: 0 auto;
+  li{
+    list-style: none;
+    float: left;
+    padding: 10px 20px;
+    a {font-size:16px}
+    a:link {color: blue; text-decoration:none;} //未访问：蓝色、无下划线
+    a:active {color: red; } //激活：红色
+    a:visited {color:purple;text-decoration:none;} //已访问：紫色、无下划线
+    a:hover {color: red; text-decoration:underline;} //鼠标移近：红色、下划线
+
+  }
+}*/
+
 footer{
   ul{
-    margin: 0 auto;
     li{
-      list-style: none;
-      float: left;
-      padding: 10px 20px;
-      a {font-size:16px}
-      a:link {color: blue; text-decoration:none;} //未访问：蓝色、无下划线
-      a:active {color: red; } //激活：红色
-      a:visited {color:purple;text-decoration:none;} //已访问：紫色、无下划线
-      a:hover {color: red; text-decoration:underline;} //鼠标移近：红色、下划线
-
+      display: inline-block;
+      height: 80px;
+      a{
+        display: block;
+        height: 80px;
+        padding: 0 24px;
+        span{
+          height: 40px;
+          line-height: 40px;
+          display: block;
+        }
+        img{
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          display: block;
+          margin: 0 auto;
+        }
+      }
     }
   }
+
 }
 
 li{
@@ -67,33 +92,11 @@ li{
 a{
   text-decoration: none;
   color: purple;
-  //font-weight: lighter;
 }
 
 /*------------------------------------------content----------------------------------*/
 
-.list{
-  ul{
-    height: 100px;
-    li{
-      float: left;
-      height: 100px;
-      padding: 0 24px;
-      img{
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        display: block;
-        margin: 0 auto;
-      }
-      a{
-        height: 50px;
-        line-height: 50px;
-        display: block;
-      }
-    }
-  }
-}
+
 
 
 

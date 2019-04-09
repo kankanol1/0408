@@ -1,15 +1,18 @@
----
-layout: default
----
-
-<p>个人主页</p>
-<div class="list">
-    <ul>
-        {% for item in site.data.blog %}
-        <li>
-            <img src="{{ item.jpg }}" alt="">
-            <a href="{{ item.url }}">{{ item.name }}</a>
-        </li>
-        {% endfor %}
-    </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{page.title}}</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    {% feed_meta %}
+    {% seo %}
+</head>
+<body>
+{% include navigation.html %}
+<div id="box">
+    {{content}}
 </div>
+<hr>
+{% include footer.html %}
+</body>
+</html>
