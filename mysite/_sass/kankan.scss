@@ -1,0 +1,65 @@
+.current {
+  color: red;
+}
+
+html,body{
+  padding: 0;
+  margin: 0;
+}
+
+
+nav{
+  position: fixed;
+  background: #111111;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  ul{
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+    li{
+      list-style: none;
+      float: left;
+      padding: 0 20px;
+      height: 50px;
+      line-height: 50px;
+      a {
+        color: pink;
+        font-size:16px;
+        text-decoration:none;
+      }
+    }
+  }
+}
+
+.bar{
+  color: pink;
+  font-size:16px;
+  text-decoration:none;
+}
+
+
+
+#box{
+  padding: 50px 40px 0;
+}
+
+
+
+footer{
+  ul{
+    margin: 0 auto;
+    li{
+      list-style: none;
+      float: left;
+      padding: 10px 20px;
+      a {font-size:16px}
+      a:link {color: blue; text-decoration:none;} //未访问：蓝色、无下划线
+      a:active {color: red; } //激活：红色
+      a:visited {color:purple;text-decoration:none;} //已访问：紫色、无下划线
+      a:hover {color: red; text-decoration:underline;} //鼠标移近：红色、下划线
+
+    }
+  }
+}
