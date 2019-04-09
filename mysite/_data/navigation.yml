@@ -12,5 +12,7 @@
   link: /vue/
 - name: React
   link: /react/
-- name: "样式"
+- name: "博客"
   link: /kankan/
+- naem: Staff
+  link: /staff/

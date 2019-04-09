@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<p>个人主页</p>
+<div class="list">
+    <ul>
+        {% for item in site.data.blog %}
+        <li>
+            <img src="{{ item.jpg }}" alt="">
+            <a href="{{ item.url }}">{{ item.name }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
