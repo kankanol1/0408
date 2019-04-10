@@ -1,5 +1,8 @@
-- name: 个人主页
+- name: kankan主页
   url: https://kankan.fun
+  jpg: /assets/img/zhuye.jpg
+- name: Fanny主页
+  url: https://fanny.kankan.fun
   jpg: /assets/img/zhuye.jpg
 - name: Github主页
   url: https://github.com/kankanol1

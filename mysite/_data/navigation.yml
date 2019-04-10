@@ -6,8 +6,8 @@
   link: /jekyll/
 #- name: Javascript
 #  link: /javascript/
-#- name: CSS
-#  link: /css/
+- name: Git 命令
+  link: /git/
 - name: Vue
   link: /vue/
 - name: React
