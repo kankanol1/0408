@@ -81,6 +81,7 @@ footer{
           margin: 0 auto;
         }
       }
+
     }
   }
 
@@ -97,6 +98,59 @@ a{
 /*------------------------------------------content----------------------------------*/
 
 
+/*---------首页----------*/
+
+.kan{
+  h1{
+    text-align: center;
+    color: purple;
+  }
+  p{
+    text-indent: 30px;
+  }
+
+  .demo{
+    h2{
+      font-family: Arial;
+    }
+    ul{
+
+      li{
+        height: 150px;
+        display: inline-block;
+        padding: 0 10px;
+        text-align: center;
+        a{
+          height: 150px;
+          img{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 1px solid pink;
+            display: block;
+            margin: 0 auto;
+          }
+          span{
+            height: 50px;
+            display: block;
+            height: 40px;
+            padding-top: 10px;
+            color: #000;
+            font-size: 18px;
+
+          }
+        }
+      }
+    }
+
+  }
+
+
+}
+
+
+
+/*---------/首页----------*/
 
 
 

@@ -1,0 +1,27 @@
+- name: 绘图进阶
+  url: pc/echarts
+  jpg: assets/img/echart.png
+- name: 游戏皮肤
+  url: pc/game
+  jpg: assets/img/game.png
+- name: 方格吸引
+  url: pc/方格
+  jpg: assets/img/fange.png
+- name: 时光倒流
+  url: pc/move
+  jpg: assets/img/move.png
+
+- name: 雪夜长安
+  url: phone/cssdemo/snow
+  jpg: assets/img/snow.png
+
+- name: 璀璨星空
+  url: phone/phone/
+  jpg: assets/img/star.png
+- name: 观澜数据
+  url: phone/glsite/
+  jpg: assets/img/gl.png
+
+- name: 动漫集锦
+  url: phone/jslx/cartoon
+  jpg: assets/img/cart.png

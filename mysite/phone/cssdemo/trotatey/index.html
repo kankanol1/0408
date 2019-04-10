@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>左右翻转相册集</title>
+    <script src="top.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="shortcut icon" href="../../../data/images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+<h4>左右翻转相册</h4>
+<div class="box">
+<div class="btn">
+    <input type="button" class="left" value="<">
+    <input type="button" class="right" value=">">
+</div>
+
+    <div id="imgs">
+        <img src="../img/1.jpg" alt="">
+        <img src="../img/2.jpg" alt="">
+        <img src="../img/3.jpg" alt="">
+        <img src="../img/4.jpg" alt="">
+        <img src="../img/6.jpg" alt="">
+    </div>
+</div>
+
+
+<script type="text/javascript">
+
+    var btn = document.querySelector('.right');
+    var btnL = document.querySelector('.left');
+    var imgs = document.querySelector('#imgs').children;
+    // console.log(imgs[0]);
+    var flag =0;
+    btn.addEventListener('click',function(){
+        if(flag == 4){
+            flag=0;
+        }
+        // for(var i=0;i<imgs.length;i++){
+        //     imgs[i].style.animation = 'kankan1 1s linear';
+        //     imgs[i].style.transform = 'rotateY(-180deg)';
+        //     imgs[i].style.opacity = '0';
+        // }
+        imgs[flag].style.animation = 'kankan 2s linear';
+        imgs[flag].style.transform = 'rotateY(1deg)';
+        flag +=1;
+
+    },false);
+
+    btnL.addEventListener('click',function(){
+        if(flag < 0){
+            flag = 4;
+        }
+        // for(var i=0;i<imgs.length;i++){
+        //     imgs[i].style.animation = 'kankan1 1s linear';
+        //     imgs[i].style.transform = 'rotateY(-180deg)';
+        //     imgs[i].style.opacity = '0';
+        // }
+        imgs[flag].style.animation = 'kankan1 2s linear';
+        imgs[flag].style.transform = 'rotateY(179deg)';
+        flag -=1;
+
+    },false);
+
+
+
+</script>
+</body>
+
+</html>

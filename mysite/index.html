@@ -1,0 +1,43 @@
+---
+layout: home
+---
+
+
+<div class="kan">
+
+    <h1>扬帆起航</h1>
+    <p>模板、插脚、库等好用，但是也要认真的学习里面的运行机制，在不借助外部文件的时候，也要有能够实现功能的编程能力
+    </p>
+    <hr>
+    <div class="demo">
+        <h2>手机demo</h2>
+        <ul>
+            {% for item in site.data.phone %}
+            <li>
+                <a href="{{ item.url }}">
+                    <img src="{{ item.jpg }}" alt="">
+                    <span>{{ item.name }}</span>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        <hr>
+        <h2>PCdemo</h2>
+        <ul>
+            {% for item in site.data.pc %}
+            <li>
+                <a href="{{ item.url }}">
+                    <img src="{{ item.jpg }}" alt="">
+                    <span>{{ item.name }}</span>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+
+
+
+    </div>
+
+</div>
+<h1>
+</h1>

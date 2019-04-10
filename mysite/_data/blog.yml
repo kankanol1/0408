@@ -1,15 +1,15 @@
 - name: 个人主页
   url: https://kankan.fun
-  jpg: ../assets/img/zhuye.jpg
+  jpg: /assets/img/zhuye.jpg
 - name: Github主页
   url: https://github.com/kankanol1
-  jpg: ../assets/img/github.jpg
+  jpg: /assets/img/github.jpg
 - name: CSDN主页
   url: https://blog.csdn.net/qq_38025939
-  jpg: ../assets/img/csdn.jpg
+  jpg: /assets/img/csdn.jpg
 - name: segmentFault主页
   url: https://segmentfault.com/u/kankanol1
-  jpg: ../assets/img/github.jpg
+  jpg: /assets/img/github.jpg
 - name: 微博主页
   url: https://weibo.com/3029315223/profile?topnav=1&wvr=6&is_all=1
-  jpg: ../assets/img/weibo.jpg
+  jpg: /assets/img/weibo.jpg

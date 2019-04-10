@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/*声明变量*/
+/*-------------------resetCSSS-----------------------*/
+a,
+input,
+button {
+  /* 清楚点击阴影 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: #000;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+input,
+button {
+  /* 清除按钮圆角 iOS */
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  /* 禁止用户选中文字 */
+  -webkit-user-select: none;
+  /* 禁止文字缩放 */
+  -webkit-text-size-adjust: 100%;
+  /*s设置字体*/
+  font-family: Times New Roman, Arial, Helvetica, sans-serif;
+}
+h1 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+iframe {
+  border: 0;
+}
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+  padding-top: 20px;
+}
+/*-------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+.text-center {
+  text-align: center;
+}
+.text-padding1 {
+  padding-top: 0.20833333rem;
+  font-size: 1.5rem;
+}
+.text-padding {
+  padding: 0.20833333rem 0;
+  font-size: 1rem;
+}
+.box .content {
+  display: flex;
+}
+.box .content div {
+  flex-grow: 1;
+}
+.box .content .left {
+  margin: 10px auto;
+  text-align: center;
+}
+.box .content .left img {
+  height: 10rem;
+  width: 7rem;
+  margin: 10px auto;
+}
+.box .content .right {
+  padding-left: 0.1rem;
+  padding-right: 0.5rem;
+}
+.box .content .left {
+  padding-left: 0.5rem;
+  padding-right: 0.1rem;
+}
+.box .content .right .p1 {
+  text-indent: 0.01666667rem;
+  line-height: 0.55rem;
+  font-size: 0.48rem;
+}
+.box .content .right .p1 a {
+  text-decoration: none;
+}
+.box .content .right .p2 {
+  margin-top: 0.41666667rem;
+  line-height: 0.5rem;
+  font-size: 0.34rem;
+}
+.box .content .right .p2 span {
+  color: #827b6f;
+}
+.row .center {
+  text-align: center;
+  margin: 10px auto;
+}
+.img .center img {
+  list-style: none;
+  height: 4rem;
+  width: 6rem;
+  margin: 0 auto;
+}
+.bottom {
+  padding-top: 100px;
+  text-align: center;
+}
+.bottom img {
+  width: 300px;
+}
+.bp {
+  padding: 0 20px;
+}

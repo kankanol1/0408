@@ -1,0 +1,48 @@
+- name: 璀璨星空
+  url: phone/phone/
+  jpg: assets/img/star.png
+
+- name: 儿童写真
+  url: phone/marry/
+  jpg: assets/img/marry.png
+
+- name: 蘑菇街
+  url: phone/mogujie/
+  jpg: assets/img/mogujie.png
+
+- name: 陀螺仪VR
+  url: phone/cssdemo/allperspective
+  jpg: assets/img/allpers.png
+
+
+- name: 炫酷轮播
+  url: phone/cssdemo/csstyle
+  jpg: assets/img/cssstyle.png
+
+- name: 旋转照片
+  url: phone/cssdemo/sixrotate
+  jpg: assets/img/six.png
+
+- name: 雪夜长安
+  url: phone/cssdemo/snow
+  jpg: assets/img/snow.png
+
+
+- name: 相册集1
+  url: phone/cssdemo/trotatex
+  jpg: assets/img/trot.png
+- name: 相册集2
+  url: phone/cssdemo/trotatey
+  jpg: assets/img/lr.png
+
+- name: 观澜数据
+  url: phone/glsite/
+  jpg: assets/img/gl.png
+
+- name: 动漫集锦
+  url: phone/jslx/cartoon
+  jpg: assets/img/cart.png
+
+
+
+

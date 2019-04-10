@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>游戏皮肤</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            margin: 0 auto;
+            margin-top: 50px;
+            background-color: #000000;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            background-image: url("img/flybg.png");
+            height: 400px;
+            width: 600px;
+            position: relative;
+            top: -52px;
+        }
+        .top{
+            height: 300px;
+            width: 600px;
+            overflow: hidden;
+            position: relative;
+        }
+        .bottom{
+            height: 100px;
+            width: 600px;
+            display: flex;
+            position: relative;
+        }
+
+        .ul1{
+            width: 4200px;
+            height: 300px;
+            position: relative;
+            left: 0;
+        }
+        .ul1 li{
+            float: left;
+            height: 300px;
+            width: 600px;
+            background-repeat: no-repeat;
+            background-size: 600px 300px;
+        }
+
+        .ul1 li:nth-of-type(1){background-image: url("img/fly1.png");}
+        .ul1 li:nth-of-type(2){background-image: url("img/fly2.png");}
+        .ul1 li:nth-of-type(3){background-image: url("img/fly3.png");}
+        .ul1 li:nth-of-type(4){background-image: url("img/fly4.png");}
+        .ul1 li:nth-of-type(5){background-image: url("img/fly5.png");}
+        .ul1 li:nth-of-type(6){background-image: url("img/fly6.png");}
+        .ul1 li:nth-of-type(7){background-image: url("img/fly6.png");}
+
+        h3{
+            color: rgb(255, 243, 221);
+            text-align: center;
+            margin: 0 auto;
+            font-size: 40px;
+            font-family: sans-serif;
+            font-weight: lighter;
+        }
+        .title{
+            position: relative;
+            top: 150px;
+            z-index: 1;
+        }
+        .ul2{
+            height: 80px;
+            width: 480px;
+            position: relative;
+            margin-top: 10px;
+            flex-grow: 1;
+        }
+        .bottom div{
+            flex-grow: 1;
+            width: 50px;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .bottom div span{
+            display: block;
+            height: 68px;
+            width: 50px;
+            background-repeat: no-repeat;
+            background-image:url("img/nav.png");
+            background-size: 30px 60px;
+            position: relative;
+            top: 0;
+
+        }
+        .bottom div.left span{
+            background-position: 36px -30px;
+            top: 34px;
+
+        }
+        .bottom div.left:hover span{
+            background-position: 36px 35px;
+            top: 0;
+        }
+        .bottom div.right span{
+            background-position: -16px -30px;
+            top: 34px;
+        }
+        .bottom div.right:hover span{
+            background-position: -16px 35px;
+            top: 0;
+
+        }
+        .ul2 li{
+            float: left;
+            box-sizing: border-box;
+            height: 70px;
+            width: 80px;
+            background-repeat: no-repeat;
+            background-image:url("img/flynav.png");
+            background-size: 500px 150px;
+        }
+        .ul2 li:nth-of-type(1){background-position: 0      5px;}
+        .ul2 li:nth-of-type(2){background-position: -80px  5px;}
+        .ul2 li:nth-of-type(3){background-position: -170px 5px;}
+        .ul2 li:nth-of-type(4){background-position: -250px 5px;}
+        .ul2 li:nth-of-type(5){background-position: -330px 5px;}
+        .ul2 li:nth-of-type(6){background-position: -415px 5px;}
+    </style>
+</head>
+<body>
+
+<h3 class="title">羽翼·凌空</h3>
+<div class="box">
+    <div class="top">
+        <ul class="ul1">
+            <li data-title="羽翼·凌空"></li>
+            <li data-title="黑金·天使"></li>
+            <li data-title="骨翼·枯黄"></li>
+            <li data-title="龙翼·蔽日"></li>
+            <li data-title="涅槃·天翼"></li>
+            <li data-title="蜻蜓·星辉"></li>
+        </ul>
+    </div>
+    <div class="bottom">
+        <div class="left">
+            <span ></span>
+
+        </div>
+        <ul class="ul2">
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+        </ul>
+        <div class="right">
+            <span ></span>
+        </div>
+    </div>
+</div>
+
+<script>
+    var oTitle = document.querySelector('.title');
+    var oBox = document.querySelector('.box');
+    var flag  = 0;
+    var oUl1 = document.querySelector('.ul1');
+    var oUl2 = document.querySelector('.ul2');
+    var oLi1 = document.querySelectorAll('.ul1 li');
+    var oLi2 = document.querySelectorAll('.ul2 li');
+
+    var mark = oLi2[0];
+    mark.style.backgroundPositionY = '-74px';
+
+    //设置ul1 和 ul2 对应的效果
+    for(i=0;i<oLi2.length;i++){
+        oLi2[i].dataset.index  = i;
+
+        //d点击合一实现切换 ，移入也可以
+        oLi2[i].addEventListener('click',function(){
+            flag  = this.dataset.index;
+            mark.style.backgroundPositionY = "5px";
+            this.style.backgroundPositionY = "-74px";
+            mark = this;
+            oUl1.style.left  = -this.dataset.index * 600 + "px";
+            flag = this.dataset.index;
+            oTitle.innerHTML = oLi1[flag].dataset.title;
+        })
+
+        //这是移入 和上面的效果一样
+        oLi2[i].addEventListener('mouseenter',function(){
+            flag  = this.dataset.index;
+            mark.style.backgroundPositionY = "5px";
+            this.style.backgroundPositionY = "-74px";
+            mark = this;
+            oUl1.style.left  = -this.dataset.index * 600 + "px";
+            flag = this.dataset.index;
+            oTitle.innerHTML = oLi1[flag].dataset.title;
+        })
+    }
+    var oDivLeft = document.querySelector('.left');
+    var oDivRight = document.querySelector('.right');
+    var timer;
+
+    //左按钮函数
+    oDivLeft.addEventListener('click',function(){
+        flag ++;
+        if(flag <6){
+            oUl1.style.left = -flag * 600+"px";
+            oUl1.style.transition = "all 1s";
+            mark.style.backgroundPositionY = '5px';
+            oLi2[flag].style.backgroundPositionY = '-74px';
+            oTitle.innerHTML = oLi1[flag].dataset.title;
+            mark=oLi2[flag];
+        }else{
+            flag=5;
+        }
+    })
+
+    //y右按钮函数
+    oDivRight.addEventListener('click',function(){
+        if(flag >0){
+            flag --;
+            oUl1.style.left = -flag * 600+"px";
+            oUl1.style.transition = "all 1s";
+            mark.style.backgroundPositionY = '5px';
+            oLi2[flag].style.backgroundPositionY = '-74px';
+            oTitle.innerHTML = oLi1[flag].dataset.title;
+            mark=oLi2[flag];
+
+        }
+    })
+
+    //定时器
+    timer =setInterval(function(){
+        if(flag <5){
+            flag++;
+            oUl1.style.left = -flag *600 +"px";
+            oUl1.style.transition = "all 1s";
+            mark.style.backgroundPositionY = "5px";
+            oLi2[flag].style.backgroundPositionY = "-74px";
+            oTitle.innerHTML = oLi1[flag].dataset.title;
+            mark = oLi2[flag];
+        }else{
+            flag=0;
+            oUl1.style.left = "0px";
+            oUl1.style.transition = "all 0s";
+            mark.style.backgroundPositionY = "5px";
+            oLi2[flag].style.backgroundPositionY = "-74px";
+            oTitle.innerHTML = oLi1[flag].dataset.title;
+            mark = oLi2[flag];
+        }
+    },2000);
+
+
+    oBox.addEventListener('mouseleave',function(){
+        timer =setInterval(function(){
+            if(flag <5){
+                flag++;
+                oUl1.style.left = -flag *600 +"px";
+                oUl1.style.transition = "all 1s";
+                mark.style.backgroundPositionY = "5px";
+                oLi2[flag].style.backgroundPositionY = "-74px";
+                oTitle.innerHTML = oLi1[flag].dataset.title;
+                mark = oLi2[flag];
+            }else{
+                flag=0;
+                oUl1.style.left = "0px";
+                oUl1.style.transition = "all 0s";
+                mark.style.backgroundPositionY = "5px";
+                oLi2[flag].style.backgroundPositionY = "-74px";
+                oTitle.innerHTML = oLi1[flag].dataset.title;
+                mark = oLi2[flag];
+            }
+        },2000);
+    })
+    oBox.addEventListener('mouseenter',function(){
+        clearInterval(timer);
+    })
+
+
+</script>
+</body>
+</html>

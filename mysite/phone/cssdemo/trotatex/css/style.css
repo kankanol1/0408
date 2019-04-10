@@ -1,0 +1,102 @@
+.box {
+  /*margin: 100/320*@w;*/
+  height: 6.25rem;
+  width: 9.375rem;
+  margin: 0 auto;
+}
+body {
+  overflow-x: hidden;
+}
+.btn {
+  position: relative;
+  width: 12.5rem;
+  height: 0.78125rem;
+  top: 3.90625rem;
+  left: -1.5625rem;
+}
+.btn input {
+  width: 0.78125rem;
+  height: 0.78125rem;
+  border-radius: 50%;
+  font-size: 0.625rem;
+  color: #fff;
+  outline-style: none;
+  border: 0.015625rem solid #27fff9;
+}
+.btn .left {
+  float: left;
+}
+.btn .right {
+  float: right;
+}
+#imgs {
+  perspective: 15.625rem;
+  position: relative;
+  font-size: 0;
+  /*overflow: hidden;*/
+  width: 9.375rem;
+  height: 6.25rem;
+  transform-style: preserve-3d;
+}
+#imgs img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 9.375rem;
+  height: 6.25rem;
+  transform-origin: bottom;
+  transform: rotateX(180deg);
+  opacity: 0;
+}
+#imgs img:nth-of-type(1) {
+  transform: rotateX(0deg);
+  opacity: 1;
+}
+@keyframes kankan {
+  0% {
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+  60% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+  65% {
+    transform: rotateX(10deg);
+  }
+  70% {
+    transform: rotateX(0deg);
+  }
+  75% {
+    transform: rotateX(6deg);
+  }
+  80% {
+    transform: rotateX(0deg);
+  }
+  85% {
+    transform: rotateX(3deg);
+  }
+  90% {
+    transform: rotateX(0deg);
+  }
+  95% {
+    transform: rotateX(1deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+@keyframes kankan1 {
+  0% {
+    transform: rotateX(0deg);
+    opacity: 0.3;
+  }
+  100% {
+    transform: rotateX(-270deg);
+    opacity: 0;
+  }
+}
+h4 {
+  text-align: center;
+  margin: 0.2rem 0;
+}
